@@ -10,11 +10,11 @@ store: store is your globally loaded state
 
 1. What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
-Application state is globally loaded state and compoenent state is state that is loaded in components, when a state is used in many components it is better to use application state, when it is only used in a few components then component state is better
+Application state is globally loaded state and component state is state that is loaded in components, when a state is used in many components it is better to use application state, when it is only used in a few components then component state is better
 
 1. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
-thunk is a middleware that allows you to write actions wth ensted functions
+thunk is a middleware that allows you to write actions wth nested functions
 
 1. What is your favorite state management system you've learned and this sprint? Please explain why!
 

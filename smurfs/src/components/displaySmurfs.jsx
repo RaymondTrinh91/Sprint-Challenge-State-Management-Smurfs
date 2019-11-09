@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import { connect } from 'react-redux'
 import { fetchSmurfs } from '../actions'
 import Smurfs from './Smurfs'
@@ -16,7 +18,9 @@ const { smurfs, fetchSmurfs } = props
             <h1>hello smurfs</h1>
             <SmurfForm />
             {smurfs.map(item => (
-                <Smurfs key={item.id} item={item}/>
+                <Link to={`/smurf/${item.id}`}>
+                <Smurfs key={Date.now()} name={item.name} age={item.age} height={item.height} id={item.id}/>
+                </Link>
             ))}
         </div>
     )
